@@ -1,0 +1,21 @@
+[package]
+name = "signal_storage"
+version = "0.1.0"
+edition = "2021"
+
+[dependencies]
+argon2 = { workspace = true }
+chacha20poly1305 = { workspace = true }
+crypto_core = { path = "../protocol" }
+hmac = { workspace = true }
+rand = { workspace = true }
+rusqlite = { workspace = true }
+serde = { workspace = true, features = ["derive"] }
+serde_json = "1"
+sha2 = { workspace = true }
+thiserror = { workspace = true }
+uuid = { workspace = true }
+zeroize = { workspace = true }
+
+[dev-dependencies]
+tempfile = "3"
